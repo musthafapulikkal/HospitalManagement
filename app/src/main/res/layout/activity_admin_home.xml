@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    tools:context=".Activity.Activity.AdminHomeActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/admin"
+        android:id="@+id/id_img_admin"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:text="View Hospitals"
+        android:id="@+id/id_admin_view_hos"
+        android:textColor="@color/white"
+       android:layout_below="@+id/id_img_admin"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:text="View Users"
+        android:id="@+id/id_admin_view_users"
+        android:textColor="@color/white"
+        android:layout_below="@+id/id_admin_view_hos"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

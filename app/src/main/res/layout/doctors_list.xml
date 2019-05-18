@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:background="?android:attr/selectableItemBackground">
+   <ImageView
+       android:layout_width="100dp"
+       android:layout_height="60dp"
+       android:id="@+id/img_doctor"
+        />
+    <TextView
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="200dp"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img_doctor"
+        android:id="@+id/doctor_name"
+        android:layout_toRightOf="@+id/img_doctor" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_doctor"
+        android:layout_toRightOf="@id/img_doctor"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/doctor_specl"
+        android:layout_below="@+id/doctor_name"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/doctor_time"
+        android:textColor="@color/red"
+        android:layout_below="@+id/doctor_specl"
+        android:layout_toEndOf="@+id/img_doctor"
+        android:layout_toRightOf="@+id/img_doctor"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:textColor="@color/red"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/doctor_holiday"
+        android:layout_below="@+id/doctor_time"
+        android:layout_toEndOf="@+id/img_doctor"
+        android:layout_toRightOf="@+id/img_doctor"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>

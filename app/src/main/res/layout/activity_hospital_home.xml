@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Activity.HospitalHomeActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/home_hos_id"
+    android:scaleType="fitXY"
+    android:src="@drawable/hospital4"/>
+    <RelativeLayout
+        android:layout_below="@+id/home_hos_id"
+        android:layout_width="match_parent"
+        android:padding="18dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add doctors"
+            android:id="@+id/add_doctor"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Facilities"
+            android:layout_below="@+id/add_doctor"
+            android:layout_marginTop="20dp"
+            android:id="@+id/add_facility"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Services"
+            android:layout_below="@+id/add_facility"
+            android:layout_marginTop="20dp"
+            android:id="@+id/addservice"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Location"
+            android:layout_below="@+id/addservice"
+            android:layout_marginTop="20dp"
+            android:id="@+id/addlocation"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

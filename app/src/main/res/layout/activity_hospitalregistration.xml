@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Activity.HospitalregistrationActivity">
+    <RelativeLayout
+        android:padding="18dp"
+        android:background="@drawable/hospital3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Hospital name"
+            android:background="@color/lightblues"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="8dp"
+            android:id="@+id/id_hos_regname"/>
+        <EditText
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textEmailAddress"
+            android:hint="Hospital email"
+            android:background="@color/lightblues"
+            android:textColor="@color/white"
+            android:layout_marginTop="80dp"
+            android:paddingLeft="8dp"
+            android:id="@+id/id_hos_regemail"/>
+        <EditText
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="place"
+            android:inputType="text"
+            android:background="@color/lightblues"
+            android:textColor="@color/white"
+            android:layout_marginTop="140dp"
+            android:paddingLeft="8dp"
+            android:id="@+id/id_hos_regplace"/>
+        <RelativeLayout
+            android:id="@+id/spinner_layout"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/id_hos_regplace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightblues"
+            android:theme="@style/Spinner">
+            <Spinner
+                android:id="@+id/id_spinner_state"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                >
+
+            </Spinner>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/spinner_layout2"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/spinner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightblues"
+            android:theme="@style/Spinner">
+            <Spinner
+                android:id="@+id/id_spinner_dist"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                >
+
+            </Spinner>
+        </RelativeLayout>
+        <EditText
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/lightblues"
+            android:textColor="@color/white"
+            android:layout_below="@+id/spinner_layout2"
+            android:layout_marginTop="20dp"
+            android:hint="contact"
+            android:id="@+id/id_hos_regcontact"
+            android:inputType="number"
+            android:paddingLeft="8dp"/>
+        <EditText
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/lightblues"
+            android:textColor="@color/white"
+            android:layout_below="@+id/id_hos_regcontact"
+            android:layout_marginTop="20dp"
+            android:hint="Password"
+            android:id="@+id/id_hos_regpass"
+            android:inputType="textPassword"
+            android:paddingLeft="8dp"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/imageicon"
+            android:id="@+id/id_hos_image"
+            android:layout_below="@+id/id_hos_regpass"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@color/red"
+            android:text="choose"
+            android:id="@+id/btn_choose_hos"
+            android:textColor="@color/white"
+            android:layout_below="@+id/id_hos_regpass"
+            android:layout_toEndOf="@+id/id_hos_image"
+            android:layout_toRightOf="@+id/id_hos_image"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_hos_image"
+            android:background="@color/red"
+            android:id="@+id/btn_register"
+            android:layout_marginTop="40dp"
+            android:text="Register"
+            android:textColor="@color/white"/>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

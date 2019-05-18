@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Activity.HospitalSingleViewActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/camera"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:id="@+id/img_single_id"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/img_single_id"
+            android:layout_marginTop="20dp"
+            android:id="@+id/id_single_txt_name"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textAllCaps="true"/>
+        <LinearLayout
+            android:layout_below="@+id/id_single_txt_name"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:padding="18dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View doctors"
+                android:textColor="@color/white"
+                android:background="@color/red"
+                android:id="@+id/id_single_view_docttors"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/red"
+                android:text="view facilities"
+                android:textColor="@color/white"
+                android:id="@+id/id_single_view_facility"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:background="@color/red"
+                android:text="View Services"
+                android:id="@+id/id_single_view_service"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:background="@color/red"
+                android:text="View Location"
+                android:id="@+id/id_single_view_location"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

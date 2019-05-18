@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Activity.AddDoctorsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:id="@+id/docimg"
+            android:layout_height="wrap_content"
+            android:background="@drawable/doctor"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/chooseimg1"
+            android:scaleType="fitXY"
+            android:id="@+id/choose_doc_pro_pic_btn"
+            android:layout_alignBottom="@+id/docimg"
+            android:layout_alignEnd="@+id/docimg"
+            android:background="@color/white"
+            android:layout_alignRight="@+id/docimg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="18dp"
+            android:id="@+id/linearlayout1"
+            android:layout_below="@+id/docimg"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Doctor Name"
+                android:id="@+id/id_doc_name"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:background="@drawable/edittextborder"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:hint="Specialist"
+                android:id="@+id/id_doc_specialist"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:background="@drawable/edittextborder"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edittextborder"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="8dp"
+                android:hint="Holiday"
+                android:id="@+id/id_doc_holi_day"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:layout_marginTop="8dp"
+                android:text="Save data"
+                android:id="@+id/id_save_doc_data"
+                android:textColor="@color/white"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/orange"
+                android:layout_marginTop="12dp"
+                android:text="Add time shedule"
+                android:id="@+id/id_doc_time_btn"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

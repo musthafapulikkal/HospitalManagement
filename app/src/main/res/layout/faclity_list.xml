@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:background="?android:attr/selectableItemBackground">
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/id_img_facility"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/id_img_facility"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:id="@+id/id_txt_facility_cap"
+        android:textStyle="bold"
+      />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="8dp"
+        android:layout_below="@+id/id_txt_facility_cap"
+        android:id="@+id/id_txt_facility_des"
+         />
+
+</RelativeLayout>

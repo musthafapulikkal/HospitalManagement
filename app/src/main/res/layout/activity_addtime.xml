@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Activity.AddtimeActivity">
+    <RelativeLayout
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Available Time:"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"
+            android:id="@+id/id_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From:"
+            />
+        <RelativeLayout
+            android:id="@+id/spinner_layout_from"
+            android:layout_toEndOf="@+id/id_from"
+            android:layout_width="100dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/Spinner"
+            android:layout_toRightOf="@+id/id_from">
+            <Spinner
+                android:id="@+id/id_spinner_time_from"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                >
+
+            </Spinner>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/spinner_layout_from_am"
+            android:layout_toEndOf="@+id/spinner_layout_from"
+            android:layout_width="100dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/Spinner"
+            android:layout_toRightOf="@+id/spinner_layout_from">
+            <Spinner
+                android:id="@+id/id_spinner_time_from_am"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                >
+
+            </Spinner>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:id="@+id/time_to"
+            android:text="To:"
+           />
+        <RelativeLayout
+            android:id="@+id/spinner_layout_to"
+            android:layout_toEndOf="@+id/time_to"
+            android:layout_width="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="55dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/Spinner"
+            android:layout_toRightOf="@+id/time_to">
+            <Spinner
+                android:id="@+id/id_spinner_time_to"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                >
+
+            </Spinner>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/spinner_layout_to_am"
+            android:layout_toEndOf="@+id/spinner_layout_to"
+            android:layout_width="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/Spinner"
+            android:layout_toRightOf="@+id/spinner_layout_to">
+            <Spinner
+                android:id="@+id/id_spinner_time_to_am"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                >
+
+            </Spinner>
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:id="@+id/btn_id_add_av_time"
+            android:layout_below="@+id/spinner_layout_to"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/orange"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</ScrollView>
